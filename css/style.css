@@ -1,0 +1,1482 @@
+@font-face {
+  font-family:"Open Sans";
+  src:url("../fonts/OpenSans-Bold.ttf") format("ttf");
+  src:url("../fonts/OpenSans-Bold.woff") format("woff");
+  src:url("../fonts/OpenSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Open Sans";
+  src:url("../fonts/OpenSans-Regular.ttf") format("ttf");
+  src:url("../fonts/OpenSans-Regular.woff") format("woff");
+  src:url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Open Sans";
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("../images/football_767.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  padding-bottom: 85px;
+}
+
+header::after {
+  position: absolute;
+  content: "";
+  background-position: center center;
+  background-color: #0a0e34;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.logo_text {
+  display: block;
+  width: 133px;
+  position: relative;
+  z-index: 2;
+  padding-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  display: block;
+  font-size: 28px;
+  text-transform: uppercase;
+  position: relative;
+  justify-content: center;
+  width: 88%;
+  max-width: 400px;
+  margin-top: 136px;
+  margin-bottom: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  z-index: 2;
+}
+
+.be_recruited {
+  display: block;
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.play_college_sports {
+  display: block;
+  text-align: left;
+  margin-left: 44px;
+}
+
+.download_link {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #ffffff;
+  font-size: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  max-width: 280px;
+  margin: auto;
+  background-color: #5e42b0;
+  border-radius: 50px;
+  z-index: 2;
+}
+
+.download_link:nth-child(2n+2) {
+  margin-top: 13px;
+}
+
+.apple, .google {
+  box-sizing: border-box;
+  align-self: center;
+  display: block;
+  margin-left: 29%;
+  width: 30px;
+  margin-right: 7px;
+}
+
+.download{
+  padding-top: 6px;
+  text-align: left;
+  display: block;
+}
+
+.store_name {
+  padding-bottom: 6px;
+  text-align: left;
+  display: block;
+  font-weight: bold;
+}
+
+.article_name_main {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  margin-left: 6.25%;
+  margin-top: 20px;
+  margin-bottom: 17px;
+  width: 100%;
+}
+
+.athlets, .players {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.footballer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+
+h3 {
+  position: relative;
+  font-size: 23px;
+  color: #c1c1c1;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.athlets_list, .players_list {
+    width: 100%;
+    counter-reset: myCounter;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.benefits_list {
+    width: 100%;
+    counter-reset: myCounter;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+p {
+    margin: 0;
+    padding-top: 20px;
+  }
+
+.athlets_point, .players_point {
+    list-style: none;
+    align-items: flex-start;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+.athlets_list li:first-child, .players_list  li:first-child {
+    padding-top: 0;
+  }
+
+.athlets_list h3:before, .players_list h3:before {
+    counter-increment: myCounter;
+    content: counter(myCounter, decimal-leading-zero);
+    color: #000000;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: bold;
+    vertical-align: super;
+    margin-right: 10px;
+    padding: 0;
+    display: inline-block;
+    border-bottom: solid 4px #5e42b0;
+  }
+
+.athlets_list li:last-child {
+    background-color: #5e42b0;
+    color: #ffffff;
+  }
+
+.athlets_point:last-child h3:before {
+    border-bottom: solid 4px #ffffff;
+}
+
+.basketballer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+
+.players_list li:last-child {
+  background-color: #090c35;
+  color: #ffffff;
+}
+
+
+.players_point:last-child h3:before {
+  color: #5e42b0;
+  border-bottom: solid 4px #ffffff;
+}
+
+.article_name {
+  font-size: 28px;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  margin-top: 33px;
+  margin-bottom: 0;
+}
+
+.benefit {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.benefits h2, .benefits p {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.counter_style {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  background-color: #5e42b0;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: -58px;
+  order: 1;
+}
+
+
+.counter_style::before {
+  counter-increment: myCounter;
+  content: counter(myCounter, decimal-leading-zero);
+  color: #ffffff;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: bold;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #5e42b0;
+  border-bottom: solid 4px #8f7bc8;
+  order: 1;
+}
+
+.benefits_list {
+  max-width: 100%;
+}
+
+.be-active img, .find-contact img, .work-it img{
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  order: 2;
+}
+
+.benefit p {
+  margin-bottom: 80px;
+}
+
+footer {
+  background: url("../images/game_767.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  padding-top: 98px;
+}
+
+footer::after {
+    position: absolute;
+    content: "";
+    background-position: center center;
+    background-color: #0a0e34;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.download_banner {
+  display: block;
+  text-transform: uppercase;
+  position: relative;
+  width: 88%;
+  max-width: 400px;
+  margin-top: 57px;
+  margin-bottom: 74px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+
+.surface_square_logo {
+  display: flex;
+  width: 72px;
+  height: 72px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(117,85,212);
+  background: linear-gradient(180deg, rgba(117,85,212,1) 35%, rgba(81,56,156,1) 100%);
+  border-radius: 25%;
+  z-index: 2;
+}
+
+.download_logo {
+  display: block;
+  width: 56px;
+  position: relative;
+  margin: auto;
+  z-index: 2;
+}
+
+
+.download_app {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.show_everyone {
+  display: block;
+  font-size: 14px;
+  color: #9b8ec1;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+footer .logo_text {
+  margin-top: 80px;
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 641px) and (max-width: 707px) {
+
+  .header {
+    padding-bottom: 90px;
+  }
+
+  .logo_text {
+    width: 210px;
+    padding-top: 40px;
+  }
+
+  h1 {
+    font-size: 64px;
+    width: 77%;
+    max-width: 600px;
+    margin-top: 170px;
+    margin-bottom: 310px;
+  }
+
+  .play_college_sports {
+    margin-left: 100px;
+  }
+
+  .download_buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .download_link {
+    width: 310px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 14px;
+    width: 310px;
+  }
+  .download {
+    padding-top: 20px;
+  }
+
+  .store_name {
+    padding-bottom: 20px;
+  }
+
+  .download_link:nth-child(2n+2) {
+    margin-top: 0;
+    margin-left: 31px;
+  }
+
+  .apple, .google {
+    width: 45px;
+    margin-right: 20px;
+    margin-left: 14%;
+  }
+
+  .article_name_main {
+    font-size: 80px;
+    margin-top: 70px;
+    margin-bottom: 38px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  .athlets_list h3:before, .players_list h3:before {
+    font-size: 18px;
+  }
+
+  .athlets, .players {
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .footballer {
+    position: absolute;
+    top: 90px;
+    left: calc(40% - 450px);
+  }
+
+  .athlets .article_name_main, {
+    margin-left: 0;
+  }
+
+  .athlets .article_name_main, .athlets_list h3, .athlets_list p {
+    margin-left: 40%;
+  }
+
+  .athlets_list li:nth-last-child(2) {
+      background-color: #f6f4fa;
+      color: #000000;
+    }
+
+  .basketballer {
+    position: absolute;
+    top: 66px;
+    left: calc(110% - 436px);
+  }
+
+  .players .article_name_main {
+    margin-left: 4%;
+ }
+
+ .players_list h3, .players_list p {
+   margin-left: 4%;
+   width: 56%;
+ }
+
+  .players_point {
+   padding-left: 0;
+ }
+
+ .players_list li:nth-last-child(2) {
+     background-color: #f5f4f9;
+     color: #000000;
+   }
+
+   .article_name {
+     margin-top: 44px;
+     font-size: 80px;
+   }
+
+   .counter_style {
+     height: 114px;
+     width: 114px;
+     margin-left: 38px;
+     margin-top: -82px;
+     order: 1;
+   }
+
+  .benefits p {
+    font-size: 24px;
+  }
+
+  .benefits p, .benefits h2 {
+    padding-left: 38px;
+  }
+
+  footer {
+    padding-top: 122px;
+  }
+
+  .download_banner {
+    max-width: 703px;
+    margin-top: 80px;
+    margin-bottom: 285px;
+  }
+
+  .surface_square_logo {
+    width: 135px;
+    height: 135px;
+  }
+
+  .download_logo {
+    width: 84px;
+  }
+
+  .download_app {
+    display: block;
+    font-size: 80px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
+  .show_everyone {
+    font-size: 36px;
+  }
+
+  footer .logo_text {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 708px) and (max-width: 960px) {
+
+  .header {
+    padding-bottom: 90px;
+  }
+
+  .logo_text {
+    width: 210px;
+    padding-top: 40px;
+  }
+
+  h1 {
+    font-size: 64px;
+    width: 77%;
+    max-width: 600px;
+    margin-top: 170px;
+    margin-bottom: 310px;
+  }
+
+  .play_college_sports {
+    margin-left: 100px;
+  }
+
+  .download_buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .download_link {
+    width: 310px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 14px;
+    width: 310px;
+  }
+  .download {
+    padding-top: 20px;
+  }
+
+  .store_name {
+    padding-bottom: 20px;
+  }
+
+  .download_link:nth-child(2n+2) {
+    margin-top: 0;
+    margin-left: 31px;
+  }
+
+  .apple, .google {
+    width: 45px;
+    margin-right: 20px;
+    margin-left: 14%;
+  }
+
+  .article_name_main {
+    font-size: 80px;
+    margin-top: 70px;
+    margin-bottom: 38px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  .athlets_list h3:before, .players_list h3:before {
+    font-size: 18px;
+  }
+
+  .athlets, .players {
+    justify-content: center;
+  }
+
+  .footballer {
+    position: absolute;
+    top: 90px;
+    left: calc(40% - 450px);
+    /* width: 497px; */
+  }
+
+  .athlets .article_name_main, {
+    margin-left: 0;
+  }
+
+  .athlets .article_name_main, .athlets_list h3, .athlets_list p {
+    margin-left: 40%;
+  }
+
+  .athlets_list li:nth-last-child(2) {
+      background-color: #f6f4fa;
+      color: #000000;
+    }
+
+  .basketballer {
+    position: absolute;
+    top: 66px;
+    left: calc(100% - 436px);
+  }
+
+  .players .article_name_main {
+    margin-left: 4%;
+ }
+
+ .players_list h3, .players_list p {
+   margin-left: 4%;
+   width: 56%;
+ }
+
+  .players_point {
+   padding-left: 0;
+ }
+
+ .players_list li:nth-last-child(2) {
+     background-color: #f5f4f9;
+     color: #000000;
+   }
+
+   .article_name {
+     margin-top: 44px;
+     font-size: 80px;
+   }
+
+   .counter_style {
+     height: 114px;
+     width: 114px;
+     margin-left: 38px;
+     margin-top: -82px;
+     order: 1;
+   }
+
+  .benefits p {
+    font-size: 24px;
+  }
+
+  .benefits p, .benefits h2 {
+    padding-left: 38px;
+  }
+
+  footer {
+    padding-top: 122px;
+  }
+
+  .download_banner {
+    max-width: 703px;
+    margin-top: 80px;
+    margin-bottom: 285px;
+  }
+
+  .surface_square_logo {
+    width: 135px;
+    height: 135px;
+  }
+
+  .download_logo {
+    width: 84px;
+  }
+
+  .download_app {
+    display: block;
+    font-size: 80px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
+  .show_everyone {
+    font-size: 36px;
+  }
+
+  footer .logo_text {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1210px) {
+
+  header {
+      padding-bottom: 106px;
+    }
+
+  h1 {
+      font-size: 90px;
+      width: 80%;
+      max-width: 1531px;
+      margin-top: 280px;
+      margin-bottom: 216px;
+    }
+
+  .play_college_sports {
+      margin-left: 23%;
+    }
+
+  .download_buttons {
+      display: flex;
+      flex-wrap: nowrap;
+      margin: auto;
+      justify-content: center;
+    }
+
+  .download_link {
+      width: 310px;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 0;
+      margin-right: 0;
+      font-size: 14px;
+      width: 310px;
+    }
+  .download {
+      padding-top: 20px;
+    }
+
+  .store_name {
+      padding-bottom: 20px;
+    }
+
+  .download_link:nth-child(2n+2) {
+      margin-top: 0;
+      margin-left: 50px;
+    }
+
+  .apple, .google {
+      width: 45px;
+      margin-right: 20px;
+      margin-left: 14%;
+    }
+
+  .article_name_main {
+      font-size: 80px;
+      margin-top: 106px;
+      margin-bottom: 98px;
+    }
+
+  h3 {
+      font-size: 36px;
+    }
+
+  p {
+      font-size: 20px;
+    }
+
+  .athlets_list h3:before, .players_list h3:before {
+      font-size: 18px;
+    }
+
+  .athlets, .players {
+      justify-content: center;
+    }
+
+  .footballer {
+      position: absolute;
+      top: 90px;
+      left: calc(50% - 566px);
+    }
+
+  .athlets .article_name_main, {
+      margin-left: 0;
+    }
+
+  .athlets .article_name_main, .athlets_list h3, .athlets_list p {
+    margin-left: 53%;
+    margin-right: 10%;
+  }
+
+  .athlets_list li:nth-last-child(2) {
+    background-color: #f6f4fa;
+    color: #000000;
+  }
+
+  .basketballer {
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    width: 61%;
+    overflow: hidden;
+  }
+
+  .players .article_name_main {
+    margin-left: 10%;
+  }
+
+  .players_list h3, .players_list p {
+    margin-left: 10%;
+    width: 39%;
+  }
+
+  .players_point {
+     padding-left: 0;
+   }
+
+  .players_list li:nth-last-child(2) {
+       background-color: #f5f4f9;
+       color: #000000;
+     }
+
+  .article_name {
+       margin-top: 33px;
+       font-size: 80px;
+       line-height: 90px;
+     }
+
+  .benefit:nth-child(odd) picture {
+    display: block;
+    object-fit: cover;
+    width: 50%;
+    z-index: 2;
+  }
+
+  .benefit:nth-child(even) picture {
+    display: block;
+    object-fit: cover;
+    width: 50%;
+    order: 2;
+  }
+
+  .benefit:nth-child(even) .counter_style {
+    margin-top: 3%;
+    margin-left: calc(50% - 68px);
+  }
+
+  .counter_style {
+    height: 136px;
+    width: 136px;
+    margin-left: -68px;
+    margin-top: 3%;
+    z-index: 3;
+  }
+
+
+  .benefits {
+    justify-content: center;
+    width: 50%;
+
+  }
+
+  .benefit:nth-child(even) .benefits {
+    width: 50%;
+  }
+
+  .counter_style::before {
+    font-size: 24px;
+  }
+
+  .benefits p {
+    font-size: 24px;
+    margin-top: 10%;
+    margin-bottom: 4%;
+    padding-top: 0;
+  }
+
+  .benefits p, .benefits h2 {
+    padding-left: 78px;
+    padding-right: 0;
+    display: block;
+  }
+
+  .benefit:nth-child(even) p, .benefit:nth-child(even) h2 {
+    padding-left: 6%;
+    padding-right: 78px;
+  }
+
+  footer {
+    padding-top: 227px;
+  }
+
+  .download_banner {
+    max-width: 703px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .surface_square_logo {
+    width: 135px;
+    height: 135px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .download_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 160px;
+  }
+
+  .download_logo {
+    width: 84px;
+  }
+
+  .download_app {
+    display: block;
+    font-size: 80px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 90px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
+  .show_everyone {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 23px;
+  }
+
+  .download_buttons {
+    margin-bottom: 272px;
+  }
+
+  footer .logo_text {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1211px) and (max-width: 1920px) {
+
+header {
+    padding-bottom: 106px;
+  }
+
+h1 {
+    font-size: 90px;
+    width: 80%;
+    max-width: 1531px;
+    margin-top: 280px;
+    margin-bottom: 216px;
+  }
+
+.play_college_sports {
+    margin-left: 23%;
+  }
+
+.download_buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    justify-content: center;
+  }
+
+.download_link {
+    width: 310px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 14px;
+    width: 310px;
+  }
+.download {
+    padding-top: 20px;
+  }
+
+.store_name {
+    padding-bottom: 20px;
+  }
+
+.download_link:nth-child(2n+2) {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+
+.apple, .google {
+    width: 45px;
+    margin-right: 20px;
+    margin-left: 14%;
+  }
+
+.article_name_main {
+    font-size: 80px;
+    margin-top: 106px;
+    margin-bottom: 98px;
+  }
+
+h3 {
+    font-size: 36px;
+  }
+
+p {
+    font-size: 20px;
+  }
+
+.athlets_list h3:before, .players_list h3:before {
+    font-size: 18px;
+  }
+
+.athlets, .players {
+    justify-content: center;
+  }
+
+.footballer {
+    position: absolute;
+    top: 90px;
+    left: calc(50% - 566px);
+  }
+
+.athlets .article_name_main, {
+    margin-left: 0;
+  }
+
+.athlets .article_name_main, .athlets_list h3, .athlets_list p {
+  margin-left: 53%;
+  margin-right: 10%;
+}
+
+.athlets_list li:nth-last-child(2) {
+  background-color: #f6f4fa;
+  color: #000000;
+}
+
+.basketballer {
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  width: 61%;
+  overflow: hidden;
+}
+
+.players .article_name_main {
+  margin-left: 10%;
+}
+
+.players_list h3, .players_list p {
+  margin-left: 10%;
+  width: 39%;
+}
+
+.players_point {
+   padding-left: 0;
+ }
+
+.players_list li:nth-last-child(2) {
+     background-color: #f5f4f9;
+     color: #000000;
+   }
+
+.article_name {
+     margin-top: 33px;
+     font-size: 80px;
+     line-height: 90px;
+   }
+
+.benefit {
+  max-height: 33vw;
+  max-height: 33vw;
+  overflow: hidden;
+}
+
+.benefit:nth-child(odd) picture {
+  display: block;
+  object-fit: cover;
+  width: 50%;
+  z-index: 2;
+}
+
+.benefit:nth-child(even) picture {
+  display: block;
+  object-fit: cover;
+  width: 50%;
+  order: 2;
+}
+
+.benefit:nth-child(even) .counter_style {
+  margin-left: calc(50% - 130px - 78px);
+}
+
+.counter_style {
+  height: 156px;
+  width: 156px;
+  margin-left: calc(-130px - 78px);
+  margin-top: 0px;
+  z-index: 3;
+}
+
+.benefits {
+  justify-content: center;
+  margin-left: 130px;
+  width: calc(50% - 130px - 78px);
+  margin-top: calc(33vw / 2 - 156px);
+  max-height: calc(33vw - 2em);
+  overflow: hidden;
+}
+
+.benefit:nth-child(even) .benefits {
+  width: calc(50% - 130px - 78px);
+  margin-right: 78px;
+}
+
+.counter_style::before {
+  font-size: 24px;
+}
+
+.benefits p {
+  font-size: 24px;
+  margin-top: 10%;
+  margin-bottom: 4%;
+  padding-top: 0;
+  overflow: scroll;
+}
+
+.benefits p, .benefits h2 {
+  padding-left: 0;
+  padding-right: 0;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+footer {
+  padding-top: 227px;
+}
+
+.download_banner {
+  max-width: 703px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.surface_square_logo {
+  width: 135px;
+  height: 135px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.download_group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 160px;
+}
+
+.download_logo {
+  width: 84px;
+}
+
+.download_app {
+  display: block;
+  font-size: 80px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 90px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.show_everyone {
+  font-size: 30px;
+  text-align: left;
+  margin-left: 23px;
+}
+
+.download_buttons {
+  margin-bottom: 272px;
+}
+
+footer .logo_text {
+  padding-bottom: 50px;
+}
+}
+
+@media (min-width: 1921px) {
+
+  header {
+      padding-bottom: 106px;
+    }
+
+  h1 {
+      font-size: 90px;
+      width: 80%;
+      max-width: 1531px;
+      margin-top: 280px;
+      margin-bottom: 216px;
+    }
+
+  .play_college_sports {
+      margin-left: 23%;
+    }
+
+  .download_buttons {
+      display: flex;
+      flex-wrap: nowrap;
+      margin: auto;
+      justify-content: center;
+    }
+
+  .download_link {
+      width: 310px;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 0;
+      margin-right: 0;
+      font-size: 14px;
+      width: 310px;
+    }
+  .download {
+      padding-top: 20px;
+    }
+
+  .store_name {
+      padding-bottom: 20px;
+    }
+
+  .download_link:nth-child(2n+2) {
+      margin-top: 0;
+      margin-left: 50px;
+    }
+
+  .apple, .google {
+      width: 45px;
+      margin-right: 20px;
+      margin-left: 14%;
+    }
+
+  .article_name_main {
+      font-size: 80px;
+      margin-top: 106px;
+      margin-bottom: 98px;
+    }
+
+  h3 {
+      font-size: 36px;
+    }
+
+  p {
+      font-size: 20px;
+    }
+
+  .athlets_list h3:before, .players_list h3:before {
+      font-size: 18px;
+    }
+
+  .athlets, .players {
+      justify-content: center;
+    }
+
+  .footballer {
+      position: absolute;
+      top: 90px;
+      left: calc(50% - 566px);
+    }
+
+  .athlets .article_name_main, {
+      margin-left: 0;
+    }
+
+  .athlets .article_name_main, .athlets_list h3, .athlets_list p {
+    margin-left: 53%;
+    margin-right: 10%;
+  }
+
+  .athlets_list li:nth-last-child(2) {
+    background-color: #f6f4fa;
+    color: #000000;
+  }
+
+  .basketballer {
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    width: 61%;
+    overflow: hidden;
+  }
+
+  .players .article_name_main {
+    margin-left: 10%;
+  }
+
+  .players_list h3, .players_list p {
+    margin-left: 10%;
+    width: 39%;
+  }
+
+  .players_point {
+     padding-left: 0;
+   }
+
+  .players_list li:nth-last-child(2) {
+       background-color: #f5f4f9;
+       color: #000000;
+     }
+
+  .article_name {
+       margin-top: 33px;
+       font-size: 80px;
+       line-height: 90px;
+     }
+
+  .benefit {
+    max-height: 33vw;
+    max-height: 33vw;
+    overflow: hidden;
+  }
+
+  .benefit:nth-child(odd) picture {
+    display: block;
+    width: 50%;
+    height: auto;
+    z-index: 2;
+  }
+
+  .benefit:nth-child(even) picture {
+    display: block;
+    height: auto;
+    width: 50%;
+    order: 2;
+  }
+
+  .benefit:nth-child(even) .counter_style {
+    margin-left: calc(50% - 130px - 78px);
+  }
+
+  .counter_style {
+    height: 156px;
+    width: 156px;
+    margin-left: calc(-130px - 78px);
+    margin-top: 0px;
+    z-index: 3;
+  }
+
+  .benefits {
+    justify-content: center;
+    margin-left: 130px;
+    width: calc(50% - 130px - 78px);
+    margin-top: calc(33vw / 2 - 156px);
+    max-height: calc(33vw - 2em);
+    overflow: hidden;
+  }
+
+  .benefit:nth-child(even) .benefits {
+    width: calc(50% - 130px - 78px);
+    margin-right: 78px;
+  }
+
+  .counter_style::before {
+    font-size: 24px;
+  }
+
+  .benefits p {
+    font-size: 24px;
+    margin-top: 10%;
+    margin-bottom: 4%;
+    padding-top: 0;
+    overflow: scroll;
+  }
+
+  .benefits p, .benefits h2 {
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  footer {
+    padding-top: 227px;
+  }
+
+  .download_banner {
+    max-width: 703px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .surface_square_logo {
+    width: 135px;
+    height: 135px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .download_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 160px;
+  }
+
+  .download_logo {
+    width: 84px;
+  }
+
+  .download_app {
+    display: block;
+    font-size: 80px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 90px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
+  .show_everyone {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 23px;
+  }
+
+  .download_buttons {
+    margin-bottom: 272px;
+  }
+
+  footer .logo_text {
+    padding-bottom: 50px;
+  }
+}
